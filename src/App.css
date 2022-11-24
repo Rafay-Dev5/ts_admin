@@ -1,38 +1,36 @@
-.App {
+.dashlet {
+  border: 1px solid #d5d5d5;
+  width: 100%;
+  min-height: 300px;
+}
+
+.dashlethead {
+  display: inline-flex;
+  margin: 16px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.dashletchart {
+  /*line-height: 300px;*/
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.vert-spacer {
+  line-height: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.stackchartselector {
+  float: right;
+  position: relative;
+  z-index: 10;
+  margin-top: -20px;
+  padding-right: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.stackchartselector .btn-default:hover,
+.stackchartselector .btn-default.active {
+  background-color: #523e71;
+  border-color: #523d60;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
